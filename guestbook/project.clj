@@ -9,7 +9,7 @@
                  [org.xerial/sqlite-jdbc "3.7.2"]]
   :plugins [[lein-ring "0.8.12"]]
   :ring {:handler guestbook.handler/app
-         :init guestbook.handler/init
+         :init guestbook.handler/init   
          :destroy guestbook.handler/destroy}
   :profiles
   {:uberjar {:aot :all}
